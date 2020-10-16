@@ -1,0 +1,18 @@
+mixin color(color, name, hex)
+  li.colors__color(class=`colors__color--${color}`)
+    b= name
+    span= hex
+
+doctype html
+html
+  meta(name="viewport" content="width=device-width, initial-scale=1")
+  title UI-Kit
+body
+  ul.colors
+    +color('dark-blue', 'Dark Shade 100%', '#1F2041')
+    +color('dark-grey')
+    +color('grey')
+    +color('light-grey')
+    +color('dark-white')
+    +color('purple')
+    +color('green')

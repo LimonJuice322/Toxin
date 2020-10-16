@@ -1,0 +1,60 @@
+$basic-red: red;
+
+.colors__color {
+  padding-left: 110px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+  }
+
+  &--dark-blue {
+    &:before {
+      background-color: #1F2041;
+    }
+  }
+
+  &--dark-grey {
+    &:before {
+      background-color: rgba(31, 32, 65, 0.75);
+    }
+  }
+
+  &--grey {
+    &:before {
+      background-color: rgba(31, 32, 65, 0.5);
+    }
+  }
+
+  &--light-grey {
+    &:before {
+      background-color: rgba(31, 32, 65, 0.25);
+    }
+  }
+
+  &--dark-white {
+    &:before {
+      background-color: rgba(31, 32, 65, 0.05);
+    }
+  }
+
+  &--purple {
+    &:before {
+      background-color: #BC9CFF;
+    }
+  }
+
+  &--green {
+    &:before {
+      background-color: #6FCF97;
+    }
+  }
+
+}
